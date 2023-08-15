@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+
+      <!--tailwind-->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="border-b-2 border-fuchsia-400">
+        <h1 class="text-center bg-green-300 py-4 text-[30px]">Welcome to your <span class="text-red-500">Bank SEi</span></h1>
+      </div>
+
+
+      <main class="h-[90vh]  bg-cyan-200">
+        <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto  lg:gap-4 md:gap-3 gap-2 block justify-center items-center ">
+
+            <div class="card bg-green-400 w-96 p-8 grid items-center justify-center rounded-lg shadow-xl lg:m-5 md:m-3 m-2">
+                <h4 class="text-2xl text-white font-bold ">Deposit</h3>
+                <h2  class="text-[45px] text-white font-medium text-center">$<span id="update">00</span></h2>
+
+            </div>
+
+            <div class="card bg-yellow-400 w-96 p-8 grid items-center justify-center rounded-lg shadow-xl lg:m-5 md:m-3 m-2">
+                <h4 class="text-2xl text-white font-bold ">Withdraw</h3>
+                <h2 id="withdraw" class="text-[45px] text-white font-medium text-center">$00</h2>
+
+            </div>
+
+            <div class="card bg-violet-400 w-96 p-8 grid items-center justify-center rounded-lg shadow-xl lg:m-5 md:m-3 m-2">
+                <h4 class="text-2xl text-white font-bold ">Balance</h3>
+                <h2  class="text-[45px] text-white font-medium text-center">$<span id="balance">00</span></h2>
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- deposit and withdraw section  -->
+
+
+        <section class=" mt-12">
+
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1  mx-auto">
+                
+            <div class="card bg-violet-400 p-8 grid items-center justify-left rounded-lg shadow-xl lg:m-5 md:m-3 m-2">
+                <h4 class="text-2xl text-white font-bold ">Pleace Deposit</h3>
+              <input id="deposit-amount" class="w-10/12/12 p-4 my-5 rounded-xl"   type="text" placeholder="$ Enter your Amount ">
+
+              <button id="deposit-btn" class="py-3 px-6 w-[140px] rounded-lg bg-purple-500 text-white font-bold mt-3 hover:bg-pink-500 duration-200">Deposit</button>
+
+            </div>
+
+
+
+            <!-- withdraw -->
+
+            <div class="card bg-indigo-400	p-8 grid items-center justify-left rounded-lg shadow-xl lg:m-5 md:m-3 m-2">
+                <h4 class="text-2xl text-white font-bold ">Pleace Withdraw</h3>
+              <input class="w-10/12/12 p-4 my-5 rounded-xl"   type="text" placeholder="$ Enter your Amount ">
+
+              <button class="py-3 px-6 w-[140px] rounded-lg bg-yellow-500 text-white font-bold mt-3 hover:bg-green-500 duration-200">Withdraw</button>
+
+            </div>
+         
+
+            </div>
+            
+
+        </section>
+
+
+
+
+      </main>
+
+
+
+      <script src="deposit.js"></script>
+     
+</body>
+</html>
